@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.book-list {
+  gap: 30px;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.book {
+  border: 1px solid rgb(208, 208, 208);
+  width: 400px;
+  padding: 1rem;
+  box-shadow: 4px 4px 4px rgb(204, 204, 204);
+}
+.book h4 {
+  color: brown;
+  font-size: 1.4rem;
+}
+.book h5 {
+  color: blueviolet;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.book img {
+  width: 100%;
+}
+@media (min-width: 786px) {
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
